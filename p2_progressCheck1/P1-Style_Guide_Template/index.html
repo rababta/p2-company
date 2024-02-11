@@ -20,7 +20,7 @@
 
       <nav>
         <ul>
-          <a href="#interactive_element">Interactive Element</a>
+          <a href="#interactive_elements">Interactive Elements</a>
           <a href="#text_elements">Text Elements</a>
           <a href="#combined_elements">Combined Elements</a>
           <a href="product_listing.html">Product Listing Template</a>
@@ -139,15 +139,16 @@
         <p>.element</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg" src="img/calendar.jpg" alt="calendar";/a&gt;</code>
+        <code>&lt;a href="product_page.html" src="img/calendar.jpg" alt="calendar";/a&gt;</code>
 
         <h4>Rendered element:</h4>
 
-        <a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg">
+        <a href="product_page.html">
             <img src="img/calendar.jpg" alt="calendar">
         </a>
 
 
+        </section>
 
 
     </section>
@@ -160,6 +161,7 @@
       <h2>Text Elements</h2>
 
       <section class="element">
+
         <h3>Headings</h3>
 
         <!-- for Headings, it was easy to code them, however, I got some help from the TA to complete the sample code part -->
@@ -170,19 +172,18 @@
         <p>.h4</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;h1&gt;First Heading&lt;/h1&gt;</code>
-        <code>&lt;h2&gt;Second Heading&lt;/h2&gt;</code>
-        <code>&lt;h33&gt;Third Heading&lt;/h3&gt;</code>
-        <code>&lt;h4&gt;Fourth Heading&lt;/h4&gt;</code>
+        <code>&lt;h1&gt;- First Heading -&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;- Second Heading -&lt;/h2&gt;</code>
+        <code>&lt;h33&gt;- Third Heading -&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;- Fourth Heading -&lt;/h4&gt;</code>
 
         <h4>Rendered element:</h4>
 
-        <h1>First Heading<h1>
-        <h2>Second Heading<h2>
-        <h3>Third Heading<h3>
-        <h4>Fourth Heading<h4>
+        <h1>- First Heading -<h1>
+        <h2>- Second Heading -<h2>
+        <h3>- Third Heading -<h3>
+        <h4>- Fourth Heading -<h4>
 
-      <section class="element">
 
 
         <h3>Paragraphs</h3>
@@ -222,7 +223,7 @@
             <li>Third item</li>
         </ol>
 
-
+        </section>
 
 
     </section>
@@ -234,6 +235,7 @@
     <section id="combined_elements">
       <h2>Combined Elements</h2>
 
+      <section class="element">
 
         <h3>Main Navigation</h3>
 
@@ -253,17 +255,17 @@
 
         <div class="product-listing">
             <div class="product-item">
-                <h4>Digital Wall Calendar</h4>
-                <a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg">
-                  <img src="img/calendar.jpg" alt="Product 1">
-                </a>
-                <p>Cost: $35.99</p>
-                <a href="product1_description.html">Click for detailed description</a>
+              <a href="product_page.html">
+                <img src="img/calendar.jpg" alt="Product 1">
+              </a>
+              <h4>Digital Wall Calendar</h4>
+              <p>$35.99</p>
+              <a class="button-nav" href="checkout.html">Add to cart</a>
             </div>
 
         </div>
 
-      </section>
+
 
 
         <h3>Payment Form</h3>
@@ -277,14 +279,19 @@
             </div>
 
             <!-- Card Type -->
-            <div>
+            <div class="card-type">
                 <label for="cardType">Card Type:</label>
-                <select id="cardType" name="cardType" required>
-                    <option value="visa">Visa</option>
-                    <option value="mastercard">MasterCard</option>
-                    <option value="amex">American Express</option>
-                </select>
+                <label for="Visa">
+                    <input type="radio" id="Visa" name="radioGroup"> Visa
+                </label>
+                <label for="MasterCard">
+                    <input type="radio" id="MasterCard" name="radioGroup"> MasterCard
+                </label>
+                <label for="AmericanExpress">
+                    <input type="radio" id="AmericanExpress" name="radioGroup"> American Express
+                </label>
             </div>
+
 
             <!-- Card Number -->
             <div>
@@ -337,6 +344,8 @@
 
         </div>
 
+        </section>
+
 
 
     </section>
@@ -345,7 +354,7 @@
     <section id="about">
       <h2>About TechCal</h2>
 
-
+      <section class="element">
 
         <h3>What does the company do, or offer?</h3>
 
@@ -369,7 +378,12 @@
 
       <h3>Font</h3>
 
-      <p> monospace </p>
+      <p> - Monospace - </p>
+
+      <p>Body: 1rem</p>
+      <p>p: 1rem</p>
+      <p>h1: 1em</p>
+      <p>h2: 1.5em</p>
 
       <h3>Color Palette</h3>
 
@@ -377,23 +391,30 @@
         <img src="img/colors.png" alt="color palette">
       </figure>
 
+      </section>
+
 
     </section>
 
 
-    
+
     <section id="citations">
 
 
       <h2>Citations</h2>
 
+      <section class="element">
+
       <ul>
         <li>Skylight. Brand. 2024. <strong>Skylight 15-Inch Digital Calendar [Image]</strong>. Retrieved from: <a href="https://rb.gy/in4tr3">Amazon</a>.</li>
         <li>Foundry, Colophon. Designer. 2009. <strong>Space Mono [Font]</strong>. Retrieved from: <a href="https://fonts.google.com/specimen/Space+Mono">https://fonts.google.com/specimen/Space+Mono</a>.</li>
+
       </ul>
 
     </section>
-    
+
+    </section>
+
 
 
 
