@@ -1,0 +1,189 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  font-family: monospace;
+  padding: 2rem;
+  color: #543673;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #3bb7d1;
+
+}
+
+h2 {
+  margin-top: 6rem;
+  color: #3bb7d1;
+
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 6rem;
+  color: #3bb7d1;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  color: #543673;
+}
+
+p {
+  max-width: 65rem;
+  margin-top: 0;
+}
+
+/* for responsiveness */
+@media screen and (max-width: 65rem) {
+  p {
+    max-width: 100%; /* means 100% of width appears when viewport is 600px or shrinks less than that */
+  }
+
+  code {
+    max-width: 100%; /* means 100% of width appears when viewport is 600px or shrinks less than that */
+  }
+}
+
+/* in-text link */
+a {
+  text-decoration: none;
+}
+
+/* in-text link hover/ focus*/
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Resetting some default styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the navigation items */
+nav ul {
+  display: flex;
+}
+
+/* Styling for the navigation link */
+nav a {
+  display: flex;
+  padding: 0.5rem 2rem;
+  color: #543673;
+  background-color: #C7ECF4;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  background-color: #3bb7d1;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+  max-width: 65rem;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.5rem;
+  color: #543673;
+  background-color: #C7ECF4;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #3bb7d1;
+  text-decoration: none;
+}
+
+
+
+/*
+  IMAGE ELEMENTS -------------------
+*/
+
+/* Image as a Link */
+
+
+a img { /* inspired after lookin at codes from Stack Overflow */
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover img {
+  transform: scale(1.05);
+  filter:drop-shadow(1rem 1rem 1rem #888);
+  border-color: #777;
+}
+
+a:focus img {
+  outline: 2rem solid #007bff;
+}
+
+
+
+
+/* Style for label */
+label { /* inspired after lookin at codes from Stack Overflow */
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #543673;
+}
+
+/* Style for text input */
+input[type="text"] { /* inspired after lookin at codes from Stack Overflow */
+  padding: 0.7rem;
+  width: 50%;
+  box-sizing: border-box;
+  border: 0.1rem solid #333;
+  border-radius: 1rem;
+  transition: border-color 0.3s ease;
+  border-color: #543673;
+  color: #543673;
+}
+
+/* Hover and focus styles for text input */
+input[type="text"]:hover,
+input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow */
+  border-color: #3bb7d1;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/

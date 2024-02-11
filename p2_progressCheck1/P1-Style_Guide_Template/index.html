@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>TechCal - Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>TechCal - Style Guide</h1>
+
+      <p>CalTech is a startup digital wall calendar producing company where customers can purchase wall calenders that can sync with their phones and laptop. </p>
+
+
+      <nav>
+        <ul>
+          <a href="#interactive_element">Interactive Element</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="product_listing.html">Product Listing Template</a>
+          <a href="checkout.html">Checkout Template</a>
+          <a href="#citations">Citations</a>
+       </ul>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- for in-text link, I used the robot page example from the lecture to learn how to add a link -->
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://example.com/" target="_blank"&gt;Example Website&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <ol>
+
+          <li>
+            <a href="https://example.com/" target="_blank">Example Website</a>
+          </li>
+        </ol>
+
+      </section>
+
+
+      <!-- Default Button styling section -->
+
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+
+
+
+
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a  class="button"&gt;Submit&lt;/a&gt;</code>
+        <code>&lt;a  class="button"&gt;Reset&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Submit</a>
+        <a class="button-nav" href="#">Reset</a>
+
+
+
+
+
+        <h3>Text Input Field with Label</h3>
+
+        <!-- for the text input, I also used the example from the lecture where users can submit a comment in the page -->
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="textInput"&gt;comment&lt;/label&gt;</code>
+        <code>&lt;input type="textInput"&gt;Type here...&lt;/input&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <label for="textInput">comment:</label>
+        <input type="text" id="textInput" name="textInput" placeholder="Type here...">
+
+
+
+
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="firstOne"/label&gt;</code>
+        <code>&lt;input type="radio"&gt;first&lt;/input&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <label for="firstOne">
+            <input type="radio" id="firtOne" name="radioGroup"> first
+        </label>
+
+
+
+
+
+
+        <h3>Image as a Link</h3>
+
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg" src="img/calendar.jpg" alt="calendar";/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg">
+            <img src="img/calendar.jpg" alt="calendar">
+        </a>
+
+
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <!-- for Headings, it was easy to code them, however, I got some help from the TA to complete the sample code part -->
+
+        <h4>CSS selector:</h4>
+        <p>.h2</p>
+        <p>.h3</p>
+        <p>.h4</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;First Heading&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;Second Heading&lt;/h2&gt;</code>
+        <code>&lt;h33&gt;Third Heading&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;Fourth Heading&lt;/h4&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <h1>First Heading<h1>
+        <h2>Second Heading<h2>
+        <h3>Third Heading<h3>
+        <h4>Fourth Heading<h4>
+
+      <section class="element">
+
+
+        <h3>Paragraphs</h3>
+
+        <!-- For the paragraph, it was easy to figure out how to do it by looking at how other paragraphs were done in this page  -->
+
+        <h4>CSS selector:</h4>
+        <p>.p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt magna mattis est tempus varius. Fusce mollis et justo et porta. Donec scelerisque sapien ac neque mattis, vehicula volutpat quam vestibulum. Nulla blandit pretium mi, vitae accumsan metus egestas at. Integer a tincidunt enim. Morbi quis nunc vel lacus viverra dignissim. Duis in vestibulum nunc.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt magna mattis est tempus varius. Fusce mollis et justo et porta. Donec scelerisque sapien ac neque mattis, vehicula volutpat quam vestibulum. Nulla blandit pretium mi, vitae accumsan metus egestas at. Integer a tincidunt enim. Morbi quis nunc vel lacus viverra dignissim. Duis in vestibulum nunc.
+        </p>
+
+
+
+
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
+        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
+        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+
+
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+
+        <h3>Main Navigation</h3>
+
+        <nav>
+          <ul>
+            <a href="#updates">updates</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="our_product.html">our product</a>
+        </ul>
+        </nav>
+
+
+
+
+        <h3>Product Listing</h3>
+
+        <div class="product-listing">
+            <div class="product-item">
+                <h4>Digital Wall Calendar</h4>
+                <a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg">
+                  <img src="img/calendar.jpg" alt="Product 1">
+                </a>
+                <p>Cost: $35.99</p>
+                <a href="product1_description.html">Click for detailed description</a>
+            </div>
+
+        </div>
+
+      </section>
+
+
+        <h3>Payment Form</h3>
+
+        <form action="process_payment.php" method="post">
+
+            <!-- Name on Card -->
+            <div>
+                <label for="cardName">Name on Card:</label>
+                <input type="text" id="cardName" name="cardName" required>
+            </div>
+
+            <!-- Card Type -->
+            <div>
+                <label for="cardType">Card Type:</label>
+                <select id="cardType" name="cardType" required>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+
+            <!-- Card Number -->
+            <div>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" required>
+            </div>
+
+            <!-- Expiry Date -->
+            <div>
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" placeholder="MM/YY" required>
+            </div>
+
+            <!-- CVV -->
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" required>
+            </div>
+
+            <!-- Submit Button -->
+            <!--<input type="submit" value="Submit" class="button-nav">-->
+            <a class="button-nav" href="#">Submit</a>
+
+        </form>
+
+
+
+
+        <h3>Checkout Cart</h3>
+
+        <div class="checkout-cart">
+
+            <!-- Item  -->
+            <div class="cart-item">
+                <h4>Digital Wall Calendar</h4>
+                <p>Cost: $35.99</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <h4>Digital Pen For Calendar</h4>
+                <p>Cost: $19.99</p>
+            </div>
+
+            <!-- Total Amount -->
+            <div class="total-amount">
+                <p>taxes: $6.70</p>
+                <p>Total: $62.69</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="about">
+      <h2>About TechCal</h2>
+
+
+
+        <h3>What does the company do, or offer?</h3>
+
+        <p> The company “CalTech” is a digital wall calendar producing company where customers can purchase wall calendars that can sync with their phones and laptop. </p>
+
+        <h3>Who is the company to potential customers?</h3>
+
+        <p> it is a company dedicated to organized individuals who want to find a way to switch from paper calendars, to a digital one that can be constantly updated based on the information they add through their phone. CalTech also aims to save the environment through reducing the use of paper and encouraging having one source of keeping up with dates, tasks and events. </p>
+
+        <h3>Why might this company entice someone to purchase a product or service?</h3>
+
+        <p> Individuals who like to be organized and view their day/month/year and their events/tasks on their wall/desk without having to constantly look into their phone or computer calendar apps. These calendars are also customizable based on the weather, time of the year, or just a personal customization. They also come in different sizes.</p>
+
+        <h3>For more info</h3>
+
+        <ul>
+          <li> <strong>Download this document</strong>. <a href="https://example.com/">The Story of TechCal</a></li>
+        </ul>
+
+
+
+      <h3>Font</h3>
+
+      <p> monospace </p>
+
+      <h3>Color Palette</h3>
+
+      <figure>
+        <img src="img/colors.png" alt="color palette">
+      </figure>
+
+
+    </section>
+
+
+    <!--
+    <section id="citations">
+
+
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+
+    </section>
+    -->
+
+
+
+  </body>
+</html>
