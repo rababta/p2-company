@@ -87,7 +87,21 @@ ul {
 
 /* Styling for the navigation items */
 nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f8f8;
   display: flex;
+  justify-content: space-around;
+  border: 1px solid #3BB7D1;
+}
+nav ul li a {
+  display: block;
+  color: #33691E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 
@@ -96,7 +110,6 @@ nav a {
   display: flex;
   padding: 0.5rem 2rem;
   color: #543673;
-  background-color: #C7ECF4;
   text-decoration: none;
   border: none;
   cursor: pointer;
