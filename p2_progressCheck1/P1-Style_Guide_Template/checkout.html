@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>TechCal - Product Listing</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>TechCal - Cart & Checkout</h1>
+
+      <p>Complete the last steps to get your items </p>
+    </header>
+
+      <nav>
+        <ul>
+          <a href="index.html">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="product_listing.html">Product Listing Template</a>
+          <a href="checkout.html">Checkout Template</a>
+          <a href="#citations">Citations</a>
+       </ul>
+      </nav>
+
+      <div class="container">
+        <div class="block">
+          <section>
+          <h2>Your Cart</h2>
+
+          <h4>Digital Wall Calendar</h4>
+          <a href="https://m.media-amazon.com/images/I/81xGOQBdqeL._AC_SX425_.jpg">
+            <img src="img/calendar.jpg" alt="Product 1">
+          </a>
+          <p>Item(1): $35.99</p>
+          <p>Est GST: $4.30</p>
+
+          <div class="total">
+            <p><strong>Total: $40.29</strong></p>
+          </div>
+
+          <a class="button-nav" href="#payment_form">Checkout</a>
+          </section>
+        </div>
+
+
+        <div class="block">
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <section id="payment_form">
+        <section class="element">
+        <h2>Payment Form</h2>
+
+        <form action="process_payment.php" method="post">
+
+            <!-- Name on Card -->
+            <div>
+                <label for="cardName">Name on Card:</label>
+                <input type="text" id="cardName" name="cardName" required>
+            </div>
+
+            <!-- Card Type -->
+            <div class="card-type">
+                <label for="cardType">Card Type:</label>
+                <label for="Visa">
+                    <input type="radio" id="Visa" name="radioGroup"> Visa
+                </label>
+                <label for="MasterCard">
+                    <input type="radio" id="MasterCard" name="radioGroup"> MasterCard
+                </label>
+                <label for="AmericanExpress">
+                    <input type="radio" id="AmericanExpress" name="radioGroup"> American Express
+                </label>
+            </div>
+
+            <!-- Card Number -->
+            <div>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" required>
+            </div>
+
+            <!-- Expiry Date -->
+            <div>
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" placeholder="MM/YY" required>
+            </div>
+
+            <!-- CVV -->
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" required>
+            </div>
+
+            <!-- Submit Button -->
+            <a class="button-nav" href="#">Submit</a>
+
+        </form>
+        </section>
+
+      </section>
+
+
+
+
+
+  </body>
+</html>
