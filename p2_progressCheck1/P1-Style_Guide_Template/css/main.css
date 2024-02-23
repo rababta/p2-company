@@ -51,7 +51,8 @@ p {
   font-size: 1rem;
 }
 
-/* for responsiveness */
+/* for sceen responsiveness */
+/* the screen elements stretch or minimize based on the window size*/
 @media screen and (max-width: 77rem) {
   p {
     max-width: 100%;
