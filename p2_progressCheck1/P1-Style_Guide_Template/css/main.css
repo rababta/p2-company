@@ -10,7 +10,7 @@ body {
 }
 
 section {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 .element {
@@ -22,12 +22,17 @@ section {
 
 }
 
-h1 {
-  font-size: 2em;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
+
 h2 {
-  margin-top: 6rem;
+  margin-top: 2rem;
   color: #3bb7d1;
   font-size: 1.5em;
 
@@ -35,7 +40,7 @@ h2 {
 
 h3 {
   font-style: italic;
-  margin-top: 6rem;
+  margin-top: 2rem;
   color: #3bb7d1;
 }
 
@@ -75,7 +80,7 @@ a {
 
 /* in-text link hover/ focus*/
 a:hover, a:focus {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 /* Resetting some default styles */
@@ -132,6 +137,28 @@ code {
 
 
 /*
+  cart icon styling
+*/
+.cart-icon {
+  position: absolute;
+  right: 100px;
+  top: 7%;
+  text-decoration: none;
+}
+
+.cart-icon img {
+  width: 30px;
+  height: auto;
+  text-decoration: none;
+}
+
+.cart-icon a {
+  position: relative;
+  text-decoration: none;
+}
+
+
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -179,14 +206,14 @@ a:focus img {
 /* Style for label */
 label { /* inspired after lookin at codes from Stack Overflow */
   display: block;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #543673;
 }
 
 /* Style for text input */
 input[type="text"] { /* inspired after lookin at codes from Stack Overflow */
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
   padding: 0.7rem;
   width: 50%;
   box-sizing: border-box;
@@ -204,22 +231,153 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   border-color: #3bb7d1;
 }
 
-
-
 /*
-  COMBINED ELEMENTS -------------------
+  Product Page styling
 */
 
-/* Style for card type labels */
-.card-type label {
-  display: inline-block;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  color: #543673;
+.product-image {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
 }
 
-/* Style for card type radio buttons */
-.card-type input[type="radio"] {
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+.product-detail {
+  padding-top: 60px;
+    display: flex;
+    align-items: flex-start;
 }
+
+.product-info {
+    margin-left: 50px;
+}
+
+.price {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.add-to-cart {
+  margin-top: 0.2rem;
+  display: inline-block;
+  padding: 12px 150px;
+  color: #543673;
+  background-color: #C7ECF4;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .product-image {
+    max-width: 80%;
+    margin-right: 10px;
+  }
+  .product-detail {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .product-info {
+    margin-left: 20px;
+  }
+
+  .price {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .add-to-cart {
+    padding: 8px 75px;
+  }
+}
+
+/*
+  Checkout Page styling
+*/
+.checkout-steps {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.step {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 15px;
+    background: #eee;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.step.active {
+    background: #3bb7d1;
+    color: white;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.cart-item img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.checkout-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+.proceed-btn {
+    color: #543673;
+    background-color: #C7ECF4;
+    text-decoration: none;
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.proceed-btn:hover {
+  background-color: #3bb7d1;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+
+    .checkout-summary {
+        text-align: center;
+    }
+}
+/*
+  Checkout Page styling
+*/

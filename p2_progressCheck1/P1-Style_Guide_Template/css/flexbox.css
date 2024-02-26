@@ -6,8 +6,10 @@
 
 .container {
   display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;     /* Centers items vertically if the container has a defined height */
   flex-wrap: wrap;
-  max-width: 68rem;
+
 }
 
 .container .block {
@@ -15,7 +17,6 @@
   height: auto;
   flex-grow: 1;
   flex-basis: 15rem;
-
 }
 
 .container .block p, h4 {

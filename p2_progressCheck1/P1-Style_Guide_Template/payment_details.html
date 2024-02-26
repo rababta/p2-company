@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>TechCal - Product Listing</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+      <h1>TechCal</h1>
+    </a>
+</header>
+
+<div class="cart-icon">
+  <a href="checkout.html">
+    <img src="img/cart.png" alt="Cart">
+  </a>
+</div>
+    <nav>
+      <ul>
+        <a href="product_listing.html">Shop</a>
+        <a href="#updates">Our Story</a>
+        <a href="#about">Updates</a>
+        <a href="#contact">Contact Us</a>
+    </ul>
+    </nav>
+
+    <div class="checkout-container">
+        <div class="checkout-steps">
+            <span class="step">1. Review Cart</span>
+            <span class="step active">2. Payment Details</span>
+        </div>
+        
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+
+        <!-- Text Input for CVC-->
+        <label for="CVC">CVC:</label>
+        <input type="text" id="CVC" name="CVC" required>
+
+        <!-- Radio Input for Payment Type -->
+        <fieldset>
+          <legend>Payment Type:</legend>
+    <div class="radio-group">
+          <label for="credit-card">Credit Card</label>
+          <input type="radio" id="credit-card" name="payment-type" value="credit-card" checked>
+
+          <label for="debit-card">Debit Card</label>
+          <input type="radio" id="debit-card" name="payment-type" value="debit-card">
+
+          <label for="paypal">PayPal</label>
+          <input type="radio" id="paypal" name="payment-type" value="paypal">
+        </fieldset>
+    </div>
+
+            <!-- Submit Button -->
+          <button class="proceed-btn">Submit</button>
