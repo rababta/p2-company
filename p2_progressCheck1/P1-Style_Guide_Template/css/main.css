@@ -111,6 +111,7 @@ nav ul li a {
 }
 
 
+
 /* Styling for the navigation link */
 nav a {
   display: flex;
@@ -380,4 +381,86 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 /*
   Checkout Page styling
+*/
+
+/*
+  About Page styling
+*/
+
+/* Style for the story section */
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 50px;
+}
+
+.our-story {
+  font-size: 40px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  background-color: transparent;
+  padding: 30px 70px;
+
+}
+
+@media (max-width: 768px) {
+  .our-story {
+    font-size: 30px;
+    padding: 20px 50px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-story {
+    font-size: 20px;
+    padding: 15px 30px;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+}
+/* Style for the image within the story banner */
+.story-banner img {
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  max-height: 500px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+/* Style for the content within the story section */
+.story-content {
+  background: #fff;
+  padding: 60px;
+  border: 1px solid #543673;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.story-content h2 {
+  color: #3bb7d1;
+  margin-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .mission-section {
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px 20px;
+  }
+
+  .story-content {
+    max-width: 600px;
+    margin-left: 20px;
+  }
+}
+/*
+  About Page styling
 */
