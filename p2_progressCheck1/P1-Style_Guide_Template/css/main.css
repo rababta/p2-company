@@ -172,6 +172,20 @@ code {
   text-decoration: none;
 }
 
+/*
+  social icons styling
+
+*/
+
+.social-icons {
+  margin-top: 20px; 
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+}
+
 
 /*
   INTERACTIVE ELEMENTS -------------------
