@@ -256,10 +256,11 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 
 .home-box {
-  border: 1px solid #543673;
+  border: 1px solid #3BB7D1;
   margin: 20px auto;
   width: 80%;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: relative;
 
 }
 
@@ -267,6 +268,34 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   margin-top: 0;
   margin-bottom: 4rem;
 
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-overlay h2{
+  font-size: 3em;
+  margin-bottom: 1rem;
+}
+
+.text-overlay p{
+  color: white;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.text-overlay a{
+  margin-top: 2rem;
 }
 
 /*
@@ -481,7 +510,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 .story-content {
   background: #fff;
   padding: 60px;
-  border: 1px solid #543673;
+  border: 1px solid #3BB7D1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -570,7 +599,7 @@ input[type="submit"]:hover {
 }
 
 .update-box {
-  border: 1px solid #543673;
+  border: 1px solid #3BB7D1;
   margin: 20px auto;
   padding: 40px 20px;
   width: 80%;
