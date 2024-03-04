@@ -561,6 +561,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   padding: 60px;
   border: 1px solid #3BB7D1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin-top: 1rem;
 }
 
 .story-content h2 {
