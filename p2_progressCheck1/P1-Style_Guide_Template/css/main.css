@@ -178,7 +178,7 @@ code {
 */
 
 .social-icons {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .social-icons img {
@@ -217,6 +217,7 @@ a img { /* inspired after lookin at codes from Stack Overflow */
   border-radius: 1rem;
   transition: transform 0.3s ease-in-out;
   margin-top: 1rem;
+  max-height: 300px;
 }
 
 a:hover img {
