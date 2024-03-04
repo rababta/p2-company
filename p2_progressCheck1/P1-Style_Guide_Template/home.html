@@ -8,6 +8,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
+    <script src="submitcontact.js"></script>
 
   </head>
 
@@ -31,24 +32,14 @@
         <a href="product_listing.html">Shop</a>
         <a href="about.html">Our Story</a>
         <a href="updates.html">Updates</a>
+<<<<<<< HEAD:p2_progressCheck1/P1-Style_Guide_Template/home.html
         <a href="index.html">Style Guide</a>
+=======
+        <a href="contact.html">Contact Us</a>
+>>>>>>> 2db2c2a15b16c350f40d9534c29e1f16e7edd367:p2_progressCheck1/P1-Style_Guide_Template/contact.html
     </ul>
     </nav>
 
-    <h2>Contact Us At: </h2>
-
-    <section class="element">
-
-      <ul>
-
-        <li>
-          <strong>Phone:</strong><a href="#" target="_blank">888-888-8888</a>
-        </li>
-
-        <li>
-          <strong>Email:</strong><a href="#" target="_blank">techCal@gmail.com</a>
-        </li>
-      </ul>
 
     <footer>
       <p><strong>Contact us:</strong></p>
@@ -57,5 +48,19 @@
    </footer>
 
 
+    <form id="contactForm" action="/submit_form" method="post">
+      <h1>Contact Us</h1>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+
+<div id="messageContainer"></div>
   </body>
 </html>
