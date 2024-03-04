@@ -30,6 +30,20 @@ header {
     text-align: center;
 }
 
+footer {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #C7ECF4;
+  color: #543673;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
 
 h2 {
   margin-top: 2rem;
