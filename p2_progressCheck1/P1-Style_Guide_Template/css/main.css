@@ -298,6 +298,40 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   margin-top: 2rem;
 }
 
+@media (max-width: 768px) {
+  .text-overlay {
+
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+
+  }
+}
+
+.diff-text {
+  display: inline;
+  width: 45%;
+  margin-right: 5%;
+  vertical-align: top;
+}
+
+
+
+@media (max-width: 768px) {
+  .diff-text {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.difference {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
 /*
   Product Page styling
 */
