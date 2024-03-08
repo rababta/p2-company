@@ -5,7 +5,6 @@
 body {
   font-family: monospace;
   font-size: 1rem;
-  padding: 2rem;
   color: #543673;
 }
 
@@ -22,28 +21,103 @@ section {
 
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-footer {
-  margin-top: 10rem;
+.header-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #C7ECF4;
-  color: #543673;
-  padding: 20px;
-  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 2rem;
+}
+
+.header-logo {
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: auto;
+  margin-left: 44rem;
+}
+
+h1 {
+  margin: 0; /* Removes the default margin to tighten up the layout */
 }
 
 
+.site-footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #C7ECF4;
+  color: #543673;
+}
 
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+  text-align: left;
+}
+
+.footer-left {
+  align-items: flex-start;
+}
+
+.footer-right {
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.footer-center .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+@media (max-width: 30rem) {
+  .site-footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-left p,
+  .footer-right p {
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+  }
+}
+
+p {
+  margin: 5px 0;
+}
 
 h2 {
   margin-top: 2rem;
@@ -70,8 +144,7 @@ p {
   font-size: 1rem;
 }
 
-/* for sceen responsiveness */
-/* the screen elements stretch or minimize based on the window size*/
+
 @media screen and (max-width: 77rem) {
   p {
     max-width: 100%;
@@ -137,10 +210,8 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-  text-decoration: none;
-  background-color: #3bb7d1;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+  text-decoration: underline;
+
 }
 
 code {
@@ -155,9 +226,10 @@ code {
   cart icon styling
 */
 .cart-icon {
+  margin-top: 5rem;
   position: absolute;
   right: 100px;
-  top: 7%;
+  top: 3%;
   text-decoration: none;
 }
 
@@ -279,6 +351,12 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 
 }
 
+@media (max-width: 768px) {
+  .home-box {
+    width: 90%;
+  }
+}
+
 .home-box h2 {
   margin-top: 0;
   margin-bottom: 4rem;
@@ -313,15 +391,14 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   margin-top: 2rem;
 }
 
+
 @media (max-width: 768px) {
-  .text-overlay {
-
+  .text-overlay h2 {
+    font-size: 2em;
   }
-}
 
-@media (max-width: 480px) {
-  .text-overlay {
-
+  .text-overlay p {
+    max-width: 300px;
   }
 }
 
