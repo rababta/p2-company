@@ -357,9 +357,9 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   }
 }
 
-.home-box h2 {
-  margin-top: 0;
-  margin-bottom: 4rem;
+.home-box h1 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -402,6 +402,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   }
 }
 
+/*
 .diff-text {
   display: inline;
   width: 45%;
@@ -423,6 +424,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   margin-bottom: 3rem;
 
 }
+*/
 
 /*
   Product Page styling
@@ -584,7 +586,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   About Page styling
 */
 
-/* Style for the story section */
+/* Style for the story + updates pages + homepage "what makes us different" section */
 .mission-section {
   display: flex;
   flex-direction: column;
@@ -594,7 +596,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 
 .our-story {
-  font-size: 40px;
+
   text-align: center;
   width: 70%;
   margin: auto;
@@ -635,10 +637,13 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 /* Style for the content within the story section */
 .story-content {
   background: #fff;
-  padding: 60px;
+  padding: 40px;
   border: 1px solid #3BB7D1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .story-content h2 {
@@ -656,12 +661,12 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 
   .story-content {
     max-width: 600px;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 2rem;
   }
 }
-/*
-  About Page styling
-*/
+
 
 /* Contact form container */
 form {
@@ -717,26 +722,6 @@ input[type="submit"]:hover {
 }
 
 
-
-/* Updates Page */
-
-.updates-container {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.update-box {
-  border: 1px solid #3BB7D1;
-  margin: 20px auto;
-  padding: 40px 20px;
-  width: 80%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-
-}
-
-.update-box h2 {
-  margin-top: 0;
-}
 
 /* thankyou Page */
 .thank-you-message {
