@@ -721,6 +721,7 @@ textarea {
 label {
   margin-bottom: 5px;
   display: block;
+  text-align: left;
 }
 
 /* Style the submit button */
