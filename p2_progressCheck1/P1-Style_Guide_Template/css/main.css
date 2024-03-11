@@ -6,6 +6,9 @@ body {
   font-family: monospace;
   font-size: 1rem;
   color: #543673;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 section {
@@ -27,7 +30,7 @@ section {
   align-items: center;
   text-decoration: none;
   color: inherit;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .header-logo {
@@ -36,7 +39,7 @@ section {
   align-items: center;
   width: 5rem;
   height: auto;
-  margin-left: 44rem;
+  margin-left: 44.5rem;
 }
 
 h1 {
@@ -46,6 +49,7 @@ h1 {
 
 
 .site-footer {
+  width: 100%;
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
@@ -227,7 +231,7 @@ code {
   cart icon styling
 */
 .cart-icon {
-  margin-top: 5rem;
+  margin-top: 4rem;
   position: absolute;
   right: 100px;
   top: 3%;
