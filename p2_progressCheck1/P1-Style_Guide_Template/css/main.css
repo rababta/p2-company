@@ -41,6 +41,7 @@ section {
 
 h1 {
   margin: 0; /* Removes the default margin to tighten up the layout */
+  font-size: 2em;
 }
 
 
@@ -605,6 +606,10 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   background-color: transparent;
   padding: 30px 70px;
 
+}
+
+.our-story h1 {
+  margin-bottom: 1em;
 }
 
 @media (max-width: 768px) {
