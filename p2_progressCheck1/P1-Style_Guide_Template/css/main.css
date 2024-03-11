@@ -451,6 +451,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
     max-width: 50%;
     height: auto;
     margin-right: 20px;
+    margin-left: 40px;
 }
 
 .product-detail {
@@ -464,9 +465,6 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
     width: 45%;
 }
 
-.product-info p {
-    color: #3bb7d1;
-  }
 
 .price {
     font-size: 20px;
@@ -474,7 +472,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 
 .add-to-cart {
-  margin-top: 0.2rem;
+  margin-top: 1.5rem;
   display: inline-block;
   padding: 12px 150px;
   color: #543673;
