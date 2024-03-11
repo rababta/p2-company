@@ -422,7 +422,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 
 
-@media (max-width: 900 px) {
+@media (max-width: 900px) {
   .text-overlay h2 {
     font-size: 1.5em;
     margin-top: 0.1rem;
