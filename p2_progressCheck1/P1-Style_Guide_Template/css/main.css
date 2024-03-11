@@ -372,7 +372,13 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   .home-box {
     width: 90%;
   }
+  .home-box .button-nav {
+    font-size: 0.7em;
+    margin-top: 0.2rem;
+  }
 }
+
+
 
 .home-box h1 {
   margin-top: 3rem;
@@ -409,15 +415,17 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .text-overlay h2 {
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-top: 0.1rem;
   }
 
   .text-overlay p {
     max-width: 300px;
   }
 }
+
 
 /*
 .diff-text {
@@ -638,7 +646,6 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 
 @media (max-width: 768px) {
   .our-story {
-    font-size: 30px;
     padding: 20px 50px;
     width: 80%;
   }
