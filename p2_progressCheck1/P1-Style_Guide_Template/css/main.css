@@ -482,6 +482,12 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   transition-duration: 0.5s;
 }
 
+.add-to-cart:hover, .add-to-cart:focus {
+  background-color: #3bb7d1;
+  text-decoration: none;
+}
+
+
 @media (max-width: 767px) {
   .product-image {
     max-width: 80%;
@@ -572,12 +578,16 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
     cursor: pointer;
     margin-top: 5px;
     font-size: 18px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
-.proceed-btn:hover {
+.proceed-btn:hover, .proceed-btn:focus {
   background-color: #3bb7d1;
   text-decoration: none;
 }
+
+
 
 @media (max-width: 600px) {
     .cart-item {
