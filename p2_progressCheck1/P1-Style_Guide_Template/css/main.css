@@ -158,16 +158,22 @@ p {
 }
 
 
+
 @media screen and (max-width: 77rem) {
   p {
     max-width: 100%;
   }
+
 
   code {
     max-width: 100%;
   }
 
   element {
+    max-width: 100%;
+  }
+
+  img {
     max-width: 100%;
   }
 
@@ -350,6 +356,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
   border-color: #3bb7d1;
 }
 
+
 /*
   Home Page Styling
 */
@@ -415,7 +422,7 @@ input[type="text"]:focus { /* inspired after lookin at codes from Stack Overflow
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 900 px) {
   .text-overlay h2 {
     font-size: 1.5em;
     margin-top: 0.1rem;
